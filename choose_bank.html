@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chọn Ngân Hàng</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        button {
+            display: block;
+            margin: 10px auto;
+            padding: 15px 30px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Chọn Ngân Hàng Chuyển Tiền</h1>
+    <button onclick="redirectToBank('https://bank1.com/transfer?account=123456&amount=500000')">Ngân hàng A</button>
+    <button onclick="redirectToBank('https://bank2.com/transfer?account=123456&amount=500000')">Ngân hàng B</button>
+    <button onclick="redirectToBank('https://bank3.com/transfer?account=123456&amount=500000')">Ngân hàng C</button>
+
+    <script>
+        function redirectToBank(url) {
+            // Chuyển hướng người dùng đến link chuyển tiền
+            window.location.href = url;
+        }
+    </script>
+</body>
+</html>
